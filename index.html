@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are an electronics store. With one of the best prices in Brazil." />
+    <meta name="keywords" content="Electronics store, cheap smart watch, cheap electronics, electronics near me" />
+    <meta name="author" content="smart watch" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500&family=Permanent+Marker&display=swap"
+        as="style" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" defer></script>
+    <title>Home - Tech Shop</title>
+</head>
+
+<body>
+    <div id="fade" class="hide"></div>
+    <header class="header">
+        <div class="logo-content">
+            <div class="first-logo">
+                <a href="/" class="link-logo">
+                    <strong>Your </strong>
+                    <span class="blue-dot">●</span> <span>Logo</span>
+                </a>
+            </div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul class="nav-itens" id="nav-items">
+                <li class="li-item"><a href="#stories" class="nav-item">About us</a></li>
+                <li class="li-item"><a href="#best-sellers" class="nav-item">Best Sellers</a></li>
+                <li class="li-item"><a href="#promotions" class="nav-item">Promotions</a></li>
+                <li class="li-item"><a href="#questions" class="nav-item">FAQ</a></li>
+                <li class="li-item"><a id="open-modal" href="#" class="nav-item"><img aria-hidden="true"
+                            src="img/bag_01.avif" alt="watch_case" class="nav-cart-img lazy-load" />
+                    </a></li>
+            </ul>
+            <span id="span-item" class="span-item">0</span>
+        </nav>
+        <div class="bars" id="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <main>
+        <section class="banner lazy-load">
+            <div class="banner-content">
+                <article class="banner-text">
+                    <h1 class="banner-title">Explore our new smart watch series</h1>
+                    <p class="banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                    <button class="banner-button">See all watches</button>
+                </article>
+                <aside class="banner-image">
+                    <img aria-hidden="true" data-src="./img/banner_smart.webp" alt="banner"
+                        class="banner-img lazy-load" />
+                </aside>
+            </div>
+        </section>
+        <section class="stories" id="stories">
+            <h2 class="history-title">About us</h2>
+            <hr>
+            <div class="stories-content">
+                <footer class="stories-text">
+                    <p class="stories-description">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                        of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                        going through the cites of
+                        the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+                        sections 1.10.32 and 1.10.33
+                        of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                        BC. This book is a treatise
+                        on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                        "Lorem ipsum dolor sit
+                        amet..", comes from a line in section 1.10.32.<br>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                        interested. Sections 1.10.32 and
+                        1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+                        original form, accompanied by
+                        English versions from the 1914 translation by H. Rackham.
+                    </p>
+                </footer>
+            </div>
+        </section>
+        <section class="best-sellers" id="best-sellers">
+            <h2 class="sellers-title">Best Sellers</h2>
+            <hr>
+            <div class="sellers-content">
+                <article id="item-1" class="seller-card">
+                    <div class="new-card">
+                        <span class="span-seller-card">New</span>
+                    </div>
+                    <figure class="seller-card-image">
+                        <img aria-hidden="true" src="img/watch_case.avif" alt="watch_case"
+                            class="seller-card-img lazy-load" />
+                    </figure>
+                    <footer class="seller-card-text">
+                        <h2 class="seller-card-title">Smart Watches, Cases, Apple</h2>
+                        <p class="seller-card-description">Penom Case for Apple Watch
+                        </p>
+                        <p class="seller-card-description-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.
+                        </p>
+                        <h2 class="seller-card-value">US$ 6.99</h2>
+                        <div class="seller-card-qts">
+                            <div class="seller-qts">
+                                <button class="seller-qts-button" aria-label="decrease quantity"><i id="minus_1"
+                                        onclick="clickedMinus(id)" class="fa-solid fa-minus"></i></button>
+                                <span id="qts-sellers" class="qts-sellers">0</span>
+                                <button class="seller-qts-button" aria-label="increase quantity"><i id="plus_1"
+                                        onclick="clickedPlus(id)" class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </footer>
+                    <button id="btn-01" onclick="clickedAddToBag(this.id)" class="seller-button">ADD TO BAG</button>
+                </article>
+                <article id="item-2" class="seller-card">
+                    <figure class="seller-card-image">
+                        <img aria-hidden="true" src="img/headphone.avif" alt="head_phone"
+                            class="seller-card-img lazy-load" />
+                    </figure>
+                    <footer class="seller-card-text">
+                        <h2 class="seller-card-title">Headphones, Audio, Sound</h2>
+                        <p class="seller-card-description"> Noise Cancelling Headphone
+                        </p>
+                        <p class="seller-card-description-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.</p>
+                        <h2 class="seller-card-value">US$ 18.49</h2>
+                        <div class="seller-card-qts">
+                            <div class="seller-qts">
+                                <button class="seller-qts-button" aria-label="decrease quantity"><i id="minus_2"
+                                        onclick="clickedMinus(id)" class="fa-solid fa-minus"></i></button>
+                                <span id="qts-sellers" class="qts-sellers">0</span>
+                                <button class="seller-qts-button" aria-label="increase quantity"><i id="plus_2"
+                                        onclick="clickedPlus(id)" class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </footer>
+                    <button id="btn-02" onclick="clickedAddToBag(this.id)" class="seller-button">ADD TO BAG</button>
+                </article>
+                <article id="item-3" class="seller-card">
+                    <div class="new-card">
+                        <span class="span-seller-card">New</span>
+                    </div>
+                    <figure class="seller-card-image">
+                        <img aria-hidden="true" src="img/camera.avif" alt="camera" class="seller-card-img lazy-load" />
+                    </figure>
+                    <footer class="seller-card-text">
+                        <h2 class="seller-card-title">Cameras, Kits, Photo & Video</h2>
+                        <p class="seller-card-description">Canon Digital SLR EOS Rebel T6
+                        </p>
+                        <p class="seller-card-description-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.</p>
+                        <h2 class="seller-card-value">US$ 396.89</h2>
+                        <div class="seller-card-qts">
+                            <div class="seller-qts">
+                                <button class="seller-qts-button" aria-label="decrease quantity"><i id="minus_3"
+                                        onclick="clickedMinus(id)" class="fa-solid fa-minus"></i></button>
+                                <span id="qts-sellers" class="qts-sellers">0</span>
+                                <button class="seller-qts-button" aria-label="increase quantity"><i id="plus_3"
+                                        onclick="clickedPlus(id)" class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </footer>
+                    <button id="btn-03" onclick="clickedAddToBag(this.id)" class="seller-button">ADD TO BAG</button>
+                </article>
+            </div>
+        </section>
+        <section class="promotions" id="promotions">
+            <h2 class="sellers-title">Promotions</h2>
+            <hr>
+            <div class="sellers-content">
+                <article id="item-4" class="seller-card">
+                    <figure class="seller-card-image">
+                        <img aria-hidden="true" src="img/watch_case.avif" alt="watch_case"
+                            class="seller-card-img lazy-load" />
+                    </figure>
+                    <footer class="seller-card-text">
+                        <h2 class="seller-card-title">Smart Watches, Cases, Apple</h2>
+                        <p class="seller-card-description">Penom Case for Apple Watch
+                        </p>
+                        <p class="seller-card-description-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.</p>
+                        <span class="seller-card-value-promotion">US$ 6.99</span>
+                        <h2 class="seller-card-value">US$ 4.99</h2>
+                        <div class="seller-card-qts">
+                            <div class="seller-qts">
+                                <button class="seller-qts-button" aria-label="decrease quantity"><i id="minus_4"
+                                        onclick="clickedMinus(id)" class="fa-solid fa-minus"></i></button>
+                                <span id="qts-sellers" class="qts-sellers">0</span>
+                                <button class="seller-qts-button" aria-label="increase quantity"><i id="plus_4"
+                                        onclick="clickedPlus(id)" class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </footer>
+                    <button id="btn-04" onclick="clickedAddToBag(this.id)" class="seller-button">ADD TO BAG</button>
+                </article>
+                <article id="item-5" class="seller-card">
+                    <figure class="seller-card-image">
+                        <img aria-hidden="true" src="img/headphone.avif" alt="head_phone"
+                            class="seller-card-img lazy-load" />
+                    </figure>
+                    <footer class="seller-card-text">
+                        <h2 class="seller-card-title">Headphones, Audio, Sound</h2>
+                        <p class="seller-card-description"> Noise Cancelling Headphone
+                        </p>
+                        <p class="seller-card-description-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.</p>
+                        <span class="seller-card-value-promotion">US$ 18.49</span>
+                        <h2 class="seller-card-value">US$ 15.99</h2>
+                        <div class="seller-card-qts">
+                            <div class="seller-qts">
+                                <button class="seller-qts-button" aria-label="decrease quantity"><i id="minus_5"
+                                        onclick="clickedMinus(id)" class="fa-solid fa-minus"></i></button>
+                                <span id="qts-sellers" class="qts-sellers">0</span>
+                                <button class="seller-qts-button" aria-label="increase quantity"><i id="plus_5"
+                                        onclick="clickedPlus(id)" class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </footer>
+                    <button id="btn-05" onclick="clickedAddToBag(this.id)" class="seller-button">ADD TO BAG</button>
+                </article>
+                <article id="item-6" class="seller-card">
+                    <figure class="seller-card-image">
+                        <img aria-hidden="true" src="img/camera.avif" alt="camera" class="seller-card-img lazy-load" />
+                    </figure>
+                    <footer class="seller-card-text">
+                        <h2 class="seller-card-title">Cameras, Kits, Photo & Video</h2>
+                        <p class="seller-card-description">Canon Digital SLR EOS Rebel T6
+                        </p>
+                        <p class="seller-card-description-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem Ipsum passages, and more
+                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                            Ipsum.</p>
+                        <span class="seller-card-value-promotion">US$ 396.89</span>
+                        <h2 class="seller-card-value">US$ 325.90</h2>
+                        <div class="seller-card-qts">
+                            <div class="seller-qts">
+                                <button class="seller-qts-button" aria-label="decrease quantity"><i id="minus_6"
+                                        onclick="clickedMinus(id)" class="fa-solid fa-minus"></i></button>
+                                <span id="qts-sellers" class="qts-sellers">0</span>
+                                <button class="seller-qts-button" aria-label="increase quantity"><i id="plus_6"
+                                        onclick="clickedPlus(id)" class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </footer>
+                    <button id="btn-06" onclick="clickedAddToBag(this.id)" class="seller-button">ADD TO BAG</button>
+                </article>
+            </div>
+        </section>
+        <section class="questions" id="questions">
+            <div class="question-content">
+                <article class="questions-title">
+                    <h3 class="question-title">FAQ</h3>
+                    <p class="question-description">Clear your doubts</p>
+                </article>
+                <div class="questions-text">
+                    <details class="question-text">
+                        <summary class="question">
+                            How to Buy?
+                        </summary>
+                        <p class="question-answers">
+                            We have prepared a simple and safe navigation for you, in the top menu you can find all
+                            product categories.
+                        </p>
+                    </details>
+                    <details class="question-text">
+                        <summary class="question">
+                            What are the payment methods?
+                        </summary>
+                        <p class="question-answers">
+                            Payment methods:
+                        </p>
+                        <ol class="question-list">
+                            <li>
+                                Pix.
+                            </li>
+                            <li>
+                                We accept credit and debit cards of all brands.
+                            </li>
+                            <li>
+                                Credit Card that can be paid in up to 3 interest-free installments.
+                            </li>
+                            <li>
+                                Food voucher card.
+                            </li>
+                        </ol>
+                    </details>
+                    <details class="question-text">
+                        <summary class="question">
+                            Deadline and Delivery?
+                        </summary>
+                        <p class="question-answers">
+                            Oferecemos 3 modalidades de entrega: Economico (PAC), We offer 3 delivery methods: Economy
+                            (PAC), express (Sedex) and carrier, however, depending on the region, the variety
+                            of carriers is limited.expresso (Sedex) e transportadora,
+                            porém, dependendo da região, a
+                            variedade de transportadoras é limitada.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="modal-item">
+            <div id="modal-item" class="hide">
+                <div class="modal-header-item">
+                    <h2>Item Description</h2>
+                    <button id="close-modal-item">X</button>
+                </div>
+                <div id="item-clicked-seller" class="sellers-content">
+                    <article class="seller-card">
+                        <figure class="seller-card-image">
+                            <img id="modal-item-img" class="seller-card-img lazy-load" />
+                        </figure>
+                        <footer class="seller-card-text">
+                            <h2 id="seller-card-title" class="seller-card-title">titulo 0123</h2>
+                            <p id="seller-card-description" class="seller-card-description">teste 1111
+                            </p>
+                            <p id="seller-card-description-item" class="modal-seller-card-description-item">teste 22</p>
+                            <h2 id="seller-card-value" class="seller-card-value">US$ 396.89</h2>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="modal-cart">
+            <div id="modal" class="hide">
+                <div class="modal-header">
+                    <h2>Shopping Cart</h2>
+                    <button id="close-modal">X</button>
+                </div>
+                <div id="seller-content-cart" class="sellers-content-cart">
+                </div>
+                <div class="modal-cart-content-btn">
+                    <p>Total Unity: <span id="modal-total-unity">0</span></p>
+                    <p>Total Value: U$ <span id="modal-total-value">0</span></p>
+                    <button id="modal-cart-btn" class="modal-cart-btn">finalize purchase</button>
+                </div>
+            </div>
+        </section>
+        <section class="modal-payment">
+            <div id="modal-payment" class="hide">
+                <div class="modal-header-payment">
+                    <h2>Purchase Payment</h2>
+                    <button id="close-modal-payment">X</button>
+                </div>
+                <div id="content-payment" class="content-payment">
+                    <div class="card">
+                        <div class="intern">
+                            <img class="approximation" src="img/aprox.avif" alt="aproximation">
+                            <div class="card-number">
+                                <div class="number-vl">1234 5678 9101 1121</div>
+                            </div>
+                            <div class="card-holder">
+                                <label>Holder</label>
+                                <div class="name-vl">NOAH JACOB</div>
+                            </div>
+                            <div class="card-infos">
+                                <div class="exp">
+                                    <label>valid-thru</label>
+                                    <div class="expiration-vl">02/40</div>
+                                </div>
+                                <div class="cvv">
+                                    <label>CVV</label>
+                                    <div class="cvv-vl">123</div>
+                                </div>
+                            </div>
+                            <img class="chip" src="img/chip.png" alt="chip">
+                        </div>
+                    </div>
+                    <div class="modal-cart-content-btn">
+                        <form id="credit-card">
+                            <div class="number-container">
+                                <label>Card Number</label>
+                                <input type="text" name="card-number" id="card-number" maxlength="19"
+                                    placeholder="1234 5678 9101 1121" required
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            </div>
+                            <div class="name-container">
+                                <label>Holder</label>
+                                <input type="text" name="name-text" id="name-text" maxlength="30"
+                                    placeholder="NOAH JACOB" required
+                                    onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
+                            </div>
+                            <div class="infos-container">
+                                <div class="expiration-container">
+                                    <label>Valid-thru</label>
+                                    <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5"
+                                        placeholder="02/40" required
+                                        onkeypress="return event.charCode >=48 && event.charCode <= 57">
+                                </div>
+                                <div class="cvv-container">
+                                    <label>CVV</label>
+                                    <input type="text" name="cvv-text" id="cvv-text" maxlength="4" placeholder="1234"
+                                        required onkeypress="return event.charCode >=48 && event.charCode <= 57">
+                                </div>
+                            </div>
+                            <input type="submit" value="ADD" id="add">
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="footer-itens">
+                <article class="footer-item">
+                    <h3>The Company</h3>
+                    <ul>
+                        <li>Our story</li>
+                        <li>Press room</li>
+                    </ul>
+                </article>
+                <article class="footer-item">
+                    <h3>Policies
+                    </h3>
+                    <ul>
+                        <li>Privacy</li>
+                        <li>Terms of Use</li>
+                    </ul>
+                </article>
+                <article class="footer-item">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>Our Stores</li>
+                    </ul>
+                </article>
+            </div>
+            <article class="footer-social">
+                <h4 class="footer-title">Social Media</h4>
+                <div class="footer-logo-content">
+                    <div class="footer-first-logo">
+                        <a href="/" class="link-logo">
+                            <strong>Your </strong>
+                            <span class="blue-dot">●</span> <span>Logo</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-icons">
+                    <li class="icons-list">
+                        <a href="https://www.instagram.com" class="icons-links" target="_blank"
+                            aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" class="icons-links" target="_blank" aria-label="facebook"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/11991111111?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20como%20funciona?"
+                            class="icons-links" target="_blank" aria-label="whatsapp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.telegram.com" class="icons-links" target="_blank" aria-label="telegram"><i
+                                class="fa-brands fa-telegram"></i></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <p class="copyright-contact">2024 &copy; Copyright
+            <a class="contato-pessoal" href="https://www.linkedin.com/in/eudes-pessoa-307157259/" target="_blank">
+                <span> Eudes Pessoa </span>
+            </a>
+            All rights reserved
+        </p>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
